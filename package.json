@@ -1,0 +1,9 @@
+ {
+    "name": "caribbean-ai-master",
+    "private": true,
+    "workspaces": [
+      "projects/artist-intell",
+      "projects/patois-ai",
+      "projects/shared"
+    ]
+  }
