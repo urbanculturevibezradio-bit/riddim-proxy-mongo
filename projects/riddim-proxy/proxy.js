@@ -24,7 +24,7 @@ app.post('/riddim', async (req, res) => {
         res.json({ html });
     } else if (query) {
         // Handle search
-        const fetchWithUA = (url: string) => fetch(url, {
+        const fetchWithUA = (url) => fetch(url, {
           headers: { 'User-Agent': 'Mozilla/5.0' }
         }).then(r => {
             if (!r.ok) throw new Error(`Upstream fetch failed: ${r.status}`);
